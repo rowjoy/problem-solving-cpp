@@ -1,7 +1,11 @@
 #include <iostream>
 using namespace std;
 
-int main (){
+
+
+
+int main (){ // Fibonacci series 
+   /*
     int n1 = 0, n2 = 1, n3, i;
     //cin>>
     //cout <<
@@ -13,5 +17,17 @@ int main (){
       n2 = n3;
       cout << n3 << " ";
     }
+   */
 
+
+
+  int a = 0, b = 1 , c , i;
+  cout << a << " " << b << "\n";
+  for(i = 0 ; i <= 10; i++){
+     c = a + b;
+     a = b;
+     b = c;
+     cout << c << "\n";
+
+  }
 }

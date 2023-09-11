@@ -2,5 +2,6 @@
     "files.associations": {
         "*.dart": "dart",
         "iosfwd": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
