@@ -17,7 +17,7 @@ HCF : 1
 */
 
 int main (){
-   int a = 7 , b = 6 , hcf , r ;
+   int a = 9 , b = 6 , hcf , r ;
     
    while (true)
    { 
@@ -40,3 +40,21 @@ int main (){
    cout << "HCF : " << hcf << "\n";
    
 }
+
+/*
+int main (){
+    int a = 9, b = 6, hcf , r;
+    while (true)
+    {  
+       hcf = b;
+       r = a % b;
+       a = b;
+       b = r;
+       if (b == 0){
+         break;
+       }
+    }
+    cout << "HCF NUMBER : " << hcf;
+    
+}
+*/
