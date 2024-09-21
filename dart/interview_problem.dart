@@ -78,7 +78,7 @@ class InterviewProblem {
 void main (){
 
  InterviewProblem interviewProblem = InterviewProblem();
- print(interviewProblem.sortedSquares([-3, -2, 0, 2, 3, 4]));
+ print(interviewProblem.sortedSquares([-1, -2, 0, 2, 9, 4]));
 
 }
 
