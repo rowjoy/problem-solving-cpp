@@ -99,7 +99,7 @@ struct ComplexNumber{
      var product2 : Double
      var product3 : Double
 
-     static postfix func++ (costp : TotalBazerCost)->  TotalBazerCost{
+     static postfix func+ (costp : TotalBazerCost)->  TotalBazerCost{
          return TotalBazerCost(product1: costp.product1 + costp.product2 + costp.product3, product2: 0, product3: 0);
      }
  }
