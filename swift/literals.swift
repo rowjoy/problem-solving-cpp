@@ -26,3 +26,8 @@ print("Hexadecimal : \(hexadecimalNumber)");
 //https://www.tutorialspoint.com/swift/swift_literals.htm
 
 
+let binaryNumberLeet = 0b11100;
+print("\(binaryNumberLeet)");
+
+
+
