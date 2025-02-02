@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 /*
 
   Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
@@ -13,8 +15,10 @@
 */
 
 
+
 void main(){
-   persistence(2);
+  //  persistence(999);
+  toAlternatingCase("hello world");
 }
 
 
@@ -23,18 +27,28 @@ int persistence(int n) {
   int number = n;
   var str = number.toString().length;
   while(str > 1){
-      if (str == 2){
-         number  = int.parse(number.toString()[0]) * int.parse(number.toString()[1]);
-      }else if (str == 3){
-         number  = int.parse(number.toString()[0]) * int.parse(number.toString()[1]) * int.parse(number.toString()[1]);
-      }
+      number = number.toString().split("").map(int.parse).reduce((a,b)=> a * b);
       str = number.toString().length;
       result ++;
   }
-  print("number:  ${result}");
   return result;
 }
 
+
+
+String toAlternatingCase(final str) {
+  var result = "";
+
+  for (var i = 0; i <= str.toString().length - 1 ; i++){
+     var  char = str.toString()[i];
+
+    //  print(char.codeUnits())
+  }
+
+  return result;
+  
+
+}
 
 // https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/dart
 
