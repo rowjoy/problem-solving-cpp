@@ -65,5 +65,17 @@ int sumArray1(List<int>? array) {
   return result;
 }
 
+
+
+int binToDec(String bin) {
+  // Validate input: Ensure the string is a valid binary number
+  if (bin.isEmpty || !RegExp(r'^[01]+$').hasMatch(bin)) {
+    throw ArgumentError("Invalid binary string: $bin");
+  }
+
+  // Convert binary string to decimal integer
+  return int.parse(bin, radix: 2);
+}
+
 //Sum without highest and lowest number
 //https://www.codewars.com/kata/576b93db1129fcf2200001e6/train/dart
