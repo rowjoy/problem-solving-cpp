@@ -1,5 +1,8 @@
 void main(){
-  sumArray([0,0,0,0,1]);
+ // sumArray([0,0,0,0,1]);
+ //flattenAndSort([[3, 2, 1], [4, 6, 5], [], [9, 7, 8]]);
+  double data = 2.001;
+  chekData(data.toString());
 }
 
 
@@ -79,3 +82,38 @@ int binToDec(String bin) {
 
 //Sum without highest and lowest number
 //https://www.codewars.com/kata/576b93db1129fcf2200001e6/train/dart
+
+
+List<int> flattenAndSort(List<List<int>> nums) {
+  return [];
+}
+
+
+
+  double payAmount({
+  required String equiAmount,
+  required String encashedPointAmount,
+  required String encashedPoint,
+  required String equiCommission,
+  required String cardCharge,
+}) {
+  // Function to safely parse a string to double
+  double parseDouble(String value) {
+    return double.tryParse(value) ?? 0.0;
+  }
+
+  double equiAmounts = parseDouble(equiAmount);
+  double encashedPointAmounts = parseDouble(encashedPointAmount);
+  double encashedPoints = parseDouble(encashedPoint);
+  double equiCommissions = parseDouble(equiCommission);
+  double cardCharges = parseDouble(cardCharge);
+  
+  return equiAmounts + encashedPointAmounts + encashedPoints + equiCommissions + cardCharges;
+}
+
+
+
+
+  void chekData (String value){
+     print("Data ${value}");
+  }
