@@ -14,8 +14,5 @@ int divisors(n) {
    }
    i++;
   }
-  
-
-  print("result ${result}");
   return result;
 }
